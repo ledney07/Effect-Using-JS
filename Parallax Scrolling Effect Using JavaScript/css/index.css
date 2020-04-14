@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Open+Sans:700&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color:#ffff;
+    --primary-dark: #2f2f2f;
+    --secondary-color:#c28c36;
+
+    --primary-font: 'Cabin', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --third-main-font: 'Open Sans', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+html{
+    font-size: 10px;
+}
+
+.hero-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-wrapper{
+    text-align: center;
+}
+
+.heading-parallax{
+  font-size: 7rem;
+  font-family: var(--secondary-font);
+  color:var(--secondary-color) ;
+  font-weight: 100;
+  line-height: .5;
+}
+
+.heading-parallax::first-letter{
+  font-size: 9rem;
+}
+
+.sub-heading{
+    font-size: 5rem;
+    font-family: var(--third-main-font);
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+#parallax{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overflow{
+    height: 150vh;
+}
